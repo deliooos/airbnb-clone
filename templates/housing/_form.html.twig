@@ -1,0 +1,11 @@
+{{ form_start(form, {'attr': {'class': 'flex flex-col gap-8'}}) }}
+    <div class="relative">
+        {{ form_widget(form.price, {'attr': {'class': 'peer h-10 w-1/2 border-b-2 border-gray-300 placeholder-transparent focus:border-main-500 focus:outline-none', 'placeholder': 'Prix'}}) }}
+        {{ form_label(form.price, 'Prix', {'label_attr': {'class': 'absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm'}}) }}
+    </div>
+    <div class="relative">
+        {{ form_widget(form.size, {'attr': {'class': 'peer h-10 w-1/2 border-b-2 border-gray-300 placeholder-transparent focus:border-main-500 focus:outline-none', 'placeholder': 'Prix'}}) }}
+        {{ form_label(form.size, 'Taille (en m²)', {'label_attr': {'class': 'absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm'}}) }}
+    </div>
+    <button class="btn w-fit">Ajouter mon logement</button>
+{{ form_end(form) }}

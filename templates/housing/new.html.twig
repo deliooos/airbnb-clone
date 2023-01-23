@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter mon logement - {{ company }}{% endblock %}
+
+{% block body %}
+    <main class="classic-main">
+        <h1 class="mb-10 font-title text-6xl text-main-500 leading-relaxed">Ajouter mon logement</h1>
+
+        {{ include('housing/_form.html.twig') }}
+
+        <a href="{{ path('app_housing_index') }}">back to list</a>
+    </main>
+{% endblock %}
